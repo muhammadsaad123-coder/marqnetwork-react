@@ -1,127 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Poppins:wght@300;400;600&display=swap');
 
-.hero {
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
-  padding: 4rem 2rem;
-  justify-content: center;
+.hero{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 2rem;
 }
 
-.hero__content {
-  max-width: 650px;
-  text-align: left;
+.hero__content{
+    max-width: 650px;
 }
 
-.hero__content h1 {
-  font-size: 3.5rem;
-  font-weight: 600;
-  line-height: 1.2;
-  font-family: 'Poppins', sans-serif;
+.hero__content h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    /* align-items: flex-start; */
+    
 }
 
 .hero__content h1 span {
-  background: linear-gradient(90deg, #cccccc 0%, #999999 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+    background: linear-gradient(90deg, #cccccc 0%, #999999 100%);
+    background-clip: text;               /* standard */
+    -webkit-background-clip: text;       /* for WebKit browsers */
+    -webkit-text-fill-color: transparent;
+  }
 
-.hero__content p {
-  margin-top: 1.5rem;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.8;
-  color: #aaa;
-}
+  .hero__content p {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #aaa;
+    text-align: left;
 
-.hero__buttons {
-  margin-top: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
+  }
 
-.primary-btn,
-.secondary-btn {
-  padding: 0.75rem 1.5rem;
+  .hero__buttons {
+   
+     margin-top: 2rem;
+     display: flex;
+     gap: 1rem;
+
+  }
+  .primary-btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    /* transition: background 0.3s; */
+  }
+  .secondary-btn {
+    padding: 0.75rem 1.5rem;
+  background:darkgray;
+  color: white;
   border: none;
   border-radius: 10px;
   font-weight: 600;
   cursor: pointer;
-}
+  
+  }
 
-.primary-btn {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.secondary-btn {
-  background: darkgray;
-  color: white;
-}
-
-.primary-btn:hover,
+  .primary-btn:hover,
 .secondary-btn:hover {
   opacity: 0.85;
 }
 
-/* Responsive Styles */
-@media (max-width: 1024px) {
-  .hero {
-    padding: 3rem 2rem;
-  }
-
-  .hero__content h1 {
-    font-size: 2.8rem;
-  }
-
-  .hero__content p {
-    font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 768px) {
+/* Responsive Design */
+@media (max-width: 992px) {
   .hero {
     flex-direction: column;
-    padding: 3rem 1.5rem;
+    padding: 3rem 2rem;
     text-align: center;
+    justify-content: center;
   }
 
   .hero__content {
-    text-align: center;
+    max-width: 100%;
   }
 
   .hero__content h1 {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
+    text-align: center;
   }
 
   .hero__content p {
-    font-size: 0.9rem;
+    text-align: center;
   }
 
   .hero__buttons {
     justify-content: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero__content h1 {
-    font-size: 2rem;
-  }
-
-  .hero__content p {
-    font-size: 0.85rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 
   .primary-btn,
   .secondary-btn {
     width: 100%;
-    text-align: center;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 2rem 1rem;
   }
 
-  .hero__buttons {
-    flex-direction: column;
-    align-items: center;
+  .hero__content h1 {
+    font-size: 2rem;
+  }
+
+  .hero__content p {
+    font-size: 0.95rem;
   }
 }
