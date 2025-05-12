@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #000;
+  color: white;
+}
+
+.team-members {
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.team-members__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.team-card {
+  background: linear-gradient(145deg, #0f0f0f, #1c1c1c);
+  border-radius: 1.2rem;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-bottom: 3.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 6px solid  #000E2B;
+  /* height: 390px; */
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(0, 150, 255, 0.2), 0 0 15px rgba(0, 150, 255, 0.1);
+}
+
+.team-card__img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.team-card__info {
+  padding: 1rem;
+  text-align: center;
+}
+
+.team-card__name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  color: white;
+}
+
+.team-card__role {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 0.3rem;
+}
+
+.team-card__btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background: #111;
+  /* border: 1px solid #1e90ff; */
+  border-radius: 50%;
+  padding: 0.5rem;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 60px;
+}
+
+/* .team-card__btn:hover {
+  background: #1e90ff;
+} */
+
+.team-card__icon {
+  width: 100px;
+  height: 60px;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .team-card__img {
+    height: 200px;
+  }
+
+  .team-card__btn {
+    bottom: 0.6rem;
+    right: 0.6rem;
+  }
+}

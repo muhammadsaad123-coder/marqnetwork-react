@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Poppins:wght@300;400;600&display=swap');
+
+.fieldsstudio {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 2rem;
+     text-align: center;
+     margin-top: 40px;
+}
+
+.fieldsstudio__content {
+    max-width: 650px;
+       
+    
+}
+
+.fieldsstudio__content h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+.fieldsstudio__content h1 span {
+    background: linear-gradient(90deg, #cccccc 0%, #999999 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fieldsstudio__content p {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #aaa;
+    text-align: left;
+}
+
+.fieldsstudio__buttons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.primary-btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.secondary-btn {
+    padding: 0.75rem 1.5rem;
+    background: darkgray;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+    opacity: 0.85;
+}
+
+
+.studio-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    border-radius: 20px;
+    overflow: visible;
+    width: 100%;
+}
+
+.studio-image img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 20px;
+    display: block;
+    z-index: 1;
+    position: relative;
+}
+
+.studio-image::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 30px;
+    background: rgba(0, 255, 0, 0.5);
+    filter: blur(20px);
+    border-radius: 50%;
+    z-index: 0;
+}

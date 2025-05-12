@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+.faq__section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #000;
+  color: white;
+  padding: 4rem 2rem;
+  gap: 3rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Left column */
+.faq__intro {
+  flex: 1;
+  min-width: 280px;
+}
+
+.faq__tag {
+  background-color: #0a0f1a;
+  color: #ccc;
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.faq__intro h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.faq__intro h2 span {
+  color: #aaa;
+  font-weight: 400;
+}
+
+.faq__intro p {
+  font-size: 0.95rem;
+  color: #aaa;
+  margin-top: 1rem;
+  max-width: 400px;
+}
+
+/* Right column - Accordion list */
+.faq__list {
+  flex: 2;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq__item {
+  background: #0b0c0f;
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #1a1a1a;
+}
+
+.faq__item.open {
+  background: #111;
+}
+
+.faq__question {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.faq__icon {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #999;
+}
+
+.faq__answer {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 0.75rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faq__section {
+    flex-direction: column;
+  }
+
+  .faq__intro {
+    text-align: center;
+  }
+
+  .faq__intro h2 {
+    font-size: 2rem;
+  }
+
+  .faq__list {
+    width: 100%;
+  }
+}

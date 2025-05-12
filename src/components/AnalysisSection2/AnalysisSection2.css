@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.analysis2__section {
+  background-color: black;
+  color: white;
+  padding: 4rem 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Left-aligned text */
+.analysis2__content {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  text-align: left;
+  margin-top: 60px;
+}
+
+/* Typography */
+.analysis2__content h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.analysis2__content p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.8;
+}
+
+/* Glowing image stays centered */
+.center-glow-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+
+.center-glow-image img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 20px;
+  display: block;
+  z-index: 1;
+  position: relative;
+}
+
+.center-glow-image::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 30px;
+  background: rgba(0, 255, 0, 0.5);
+  filter: blur(20px);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .analysis2__content h2 {
+    font-size: 1.6rem;
+  }
+
+  .analysis2__content p {
+    font-size: 0.95rem;
+  }
+
+  .center-glow-image img {
+    max-width: 100%;
+  }
+}

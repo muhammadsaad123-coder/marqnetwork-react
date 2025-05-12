@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.integration__section {
+  background: #000;
+  color: white;
+  padding: 4rem 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.integration__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Each card */
+.integration__card {
+  background: radial-gradient(circle at top left, #0a0a0f, #0c0c13);
+  border-radius: 16px;
+  padding: 1.5rem;
+  position: relative;
+  border: 1px solid #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.integration__card:hover {
+  transform: translateY(-4px);
+}
+
+/* Icon and Arrow */
+.card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.card__arrow {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Title and PRO badge */
+.card__title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.card__title h4 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.pro__badge {
+  background: #36d576;
+  color: black;
+  padding: 2px 8px;
+  font-size: 0.7rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* Label and Description */
+.card__label {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.card__desc {
+  font-size: 0.85rem;
+  color: #888;
+  line-height: 1.6;
+  margin: 0;
+}
