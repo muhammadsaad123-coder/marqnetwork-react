@@ -1,17 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 
-// Functional component for the navigation bar
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav className="navbar">
-      {/* Logo container */}
+      {/* Logo */}
       <div className="navbar__logo">
         <img src="/images/logo.png" alt="Logo" />
       </div>
 
-      {/* Navigation links */}
-      <ul className="navbar__menu">
+      {/* Hamburger Icon */}
+      <div className="navbar__hamburger" onClick={toggleMenu}>
+        &#9776;
+      </div>
+
+      {/* Navigation Links */}
+      <ul className={`navbar__menu ${isMenuOpen ? 'navbar__menu--active' : ''}`}>
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/portfolio">Portfolio</a></li>
@@ -19,11 +29,8 @@ const Navbar = () => {
         <li><a href="/faq">FAQ</a></li>
       </ul>
 
-      {/* Call to action button */}
+      {/* CTA Button */}
       <button className="navbar__button">Get in Touch</button>
-
-      {/* Hamburger icon for small screens */}
-      <div className="navbar__hamburger">&#9776;</div>
     </nav>
   );
 };

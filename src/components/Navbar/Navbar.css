@@ -1,7 +1,7 @@
 /* Import font */
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Poppins:wght@400;600&display=swap');
 
-/* Reset some defaults */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -19,9 +19,7 @@ body {
   align-items: center;
   padding: 0 2rem;
   height: 72px;
-  /* max-width: 1280px;
-  margin: auto; */
-  background-color:black;
+  background-color: black;
   color: white;
   position: relative;
   z-index: 100;
@@ -67,7 +65,7 @@ body {
   background-color: #45a049;
 }
 
-/* Hamburger menu hidden by default */
+/* Hamburger icon */
 .navbar__hamburger {
   display: none;
   font-size: 28px;
@@ -75,10 +73,14 @@ body {
   color: white;
 }
 
-/* Responsive: Mobile View */
+/* Responsive styling */
 @media (max-width: 768px) {
+  .navbar__hamburger {
+    display: block;
+  }
+
   .navbar__menu {
-    display: none; /* Hide menu on small screens */
+    display: none;
     position: absolute;
     top: 72px;
     right: 0;
@@ -88,11 +90,11 @@ body {
     padding: 1rem 2rem;
   }
 
-  .navbar__hamburger {
-    display: block; /* Show hamburger icon */
+  .navbar__menu--active {
+    display: flex;
   }
 
   .navbar__button {
-    display: none; /* Optional: hide button or move it */
+    display: none;
   }
 }
