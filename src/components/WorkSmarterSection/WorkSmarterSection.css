@@ -91,29 +91,126 @@
     font-size: 0.85rem;
     color: #888;
   }
+  .work-smarter h4 {
+  font-size: 1.2rem;
+  /* color: #aaa; */
+  font-weight: 500;
+  margin-top: 1.5rem;
+}
   
-  @media (max-width: 992px) {
-    .work-smarter {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .work-smarter__content {
-      margin: 0;
-      text-align: center;
-    }
-  
-    .work-smarter__actions {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .work-smarter__rating {
-      align-items: center;
-    }
-  
-    .work-smarter__image img {
-      margin: 0;
-    }
+ @media (max-width: 992px) {
+  .work-smarter {
+    flex-direction: column;
+    text-align: center;
   }
-  
+
+  .work-smarter__content {
+    margin: 0;
+    text-align: center;
+  }
+
+  .work-smarter__actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-smarter__rating {
+    align-items: center;
+  }
+
+  .work-smarter__image img {
+    margin: 0;
+  }
+}
+
+/* For Small Screens (Mobile Devices) */
+@media (max-width: 576px) {
+  .work-smarter {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .work-smarter__content {
+    margin: 0;
+    text-align: center;
+  }
+
+  .work-smarter__image img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .work-smarter__headline {
+    font-size: 1.5rem;
+  }
+
+  .work-smarter__tag {
+    font-size: 0.8rem;
+  }
+
+  .work-smarter__description {
+    font-size: 0.85rem;
+  }
+
+  .work-smarter__button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .work-smarter__rating {
+    align-items: center;
+  }
+
+  .work-smarter__stars {
+    font-size: 1.1rem;
+  }
+
+  .work-smarter__reviews {
+    font-size: 0.75rem;
+  }
+}
+
+/* For Medium Screens (Tablets) */
+@media (max-width: 768px) {
+  .work-smarter {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .work-smarter__image img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .work-smarter__content {
+    margin: 0;
+    text-align: center;
+  }
+
+  .work-smarter__headline {
+    font-size: 1.8rem;
+  }
+
+  .work-smarter__description {
+    font-size: 0.9rem;
+  }
+
+  .work-smarter__button {
+    padding: 0.7rem 1.3rem;
+    font-size: 1rem;
+  }
+
+  .work-smarter__rating {
+    align-items: center;
+  }
+
+  .work-smarter__stars {
+    font-size: 1.2rem;
+  }
+
+  .work-smarter__reviews {
+    font-size: 0.8rem;
+  }
+}

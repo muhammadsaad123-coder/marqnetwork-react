@@ -123,4 +123,44 @@
       align-items: center;
     }
   }
+  @media (max-width: 768px) {
+  .classic-skill {
+    padding: 3rem 1.5rem;
+    gap: 2rem;
+  }
+
+  .classic-skill__image img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .classic-skill__content {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .classic-skill__headline,
+  .classic-skill__description {
+    text-align: center;
+  }
+
+  .classic-skill__headline {
+    font-size: 1.6rem;
+  }
+
+  .classic-skill__description {
+    font-size: 0.95rem;
+  }
+
+  .classic-skill__button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .classic-skill__rating {
+    align-items: center;
+  }
+}
+
   
