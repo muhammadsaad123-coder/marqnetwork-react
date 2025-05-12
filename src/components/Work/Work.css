@@ -77,3 +77,49 @@
 
  
 }
+
+@media (max-width: 768px) {
+  .work {
+    padding: 3rem 1.5rem;
+    gap: 3rem;
+  }
+
+  .work__headline {
+    font-size: 1.7rem;
+  }
+
+  .work__description {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  .work__image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .work__tag {
+    font-size: 0.8rem;
+    padding: 5px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .work {
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .work__headline {
+    font-size: 1.5rem;
+  }
+
+  .work__description {
+    font-size: 0.8rem;
+  }
+
+  .work__image img {
+    border-radius: 20px;
+  }
+}
+

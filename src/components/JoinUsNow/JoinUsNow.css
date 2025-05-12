@@ -83,3 +83,49 @@
     align-items: center;
   }
 }
+
+@media (max-width: 768px) {
+  .join {
+    padding: 3rem 1.5rem;
+    gap: 3rem;
+  }
+
+  .join__headline {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .join__description {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .join__tag {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .join__content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .join {
+    padding: 2rem 1rem;
+  }
+
+  .join__headline {
+    font-size: 1.5rem;
+  }
+
+  .join__description {
+    font-size: 0.9rem;
+  }
+
+  .join__button {
+    width: 100%;
+    text-align: center;
+  }
+}
+

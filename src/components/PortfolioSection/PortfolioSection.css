@@ -115,3 +115,57 @@
     align-items: center;
   }
 }
+
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 3rem 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .portfolio__headline {
+    font-size: 2rem;
+  }
+
+  .portfolio__description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .portfolio__button {
+    width: 100%;
+    max-width: 280px;
+    font-size: 1rem;
+    padding: 0.75rem 1.2rem;
+  }
+
+  .glow-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .glow-image::after {
+    width: 80%;
+    height: 25px;
+    filter: blur(16px);
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio {
+    padding: 2rem 1rem;
+  }
+
+  .portfolio__headline {
+    font-size: 1.6rem;
+  }
+
+  .portfolio__description {
+    font-size: 0.9rem;
+  }
+
+  .portfolio__button {
+    font-size: 0.95rem;
+    padding: 0.65rem 1.1rem;
+  }
+}
+

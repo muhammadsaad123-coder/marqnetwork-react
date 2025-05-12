@@ -72,3 +72,51 @@
     }
   }
   
+  @media (max-width: 768px) {
+  .ourservices {
+    padding: 3rem 1.5rem;
+    gap: 3rem;
+  }
+
+  .ourservices__headline {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .ourservices__description {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .ourservices__tag {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .ourservices__image img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .ourservices__content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .ourservices {
+    padding: 2rem 1rem;
+  }
+
+  .ourservices__headline {
+    font-size: 1.4rem;
+  }
+
+  .ourservices__description {
+    font-size: 0.9rem;
+  }
+
+  .ourservices__image img {
+    border-radius: 20px;
+  }
+}

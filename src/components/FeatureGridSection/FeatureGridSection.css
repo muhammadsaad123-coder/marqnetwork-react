@@ -78,9 +78,83 @@
     font-weight: 300;
   }
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     .feature__top {
       flex-direction: column;
       align-items: flex-start;
     }
+  } */
+
+  /* Existing styles remain the same, just adding improved responsive behavior */
+
+@media (max-width: 992px) {
+  .feature__grid {
+    padding: 4rem 2rem;
+    gap: 1.5rem;
   }
+
+  .feature__card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature__grid {
+    grid-template-columns: 1fr;
+    padding: 3rem 1.5rem;
+  }
+
+  .feature__card {
+    text-align: center;
+    align-items: center;
+  }
+
+  .feature__top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .feature__title {
+    font-size: 1rem;
+  }
+
+  .feature__subtitle,
+  .feature__description {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .feature__grid {
+    padding: 2rem 1rem;
+  }
+
+  .feature__card {
+    padding: 1.2rem;
+  }
+
+  .feature__icon {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+
+  .feature__title {
+    font-size: 0.95rem;
+  }
+
+  .feature__label {
+    font-size: 0.7rem;
+  }
+
+  .feature__subtitle {
+    font-size: 0.85rem;
+    line-height: 2.2;
+  }
+
+  .feature__description {
+    font-size: 0.8rem;
+    line-height: 1.8;
+  }
+}
+
