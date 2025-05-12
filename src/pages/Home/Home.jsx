@@ -3,7 +3,7 @@ import React from 'react';
 import Hero from '../../components/Hero/Hero';
 import AboutSection from '../../components/AboutSection/AboutSection';
 import ResultsSection from '../../components/ResultsSection/ResultsSection';
-import Work from '../../components/work/Work';
+import Work from '../../components/Work/Work';
 import FeatureSection from '../../components/FeatureSection/FeatureSection';
 import FeatureGridSection from '../../components/FeatureGridSection/FeatureGridSection'
 import LandinBenefits from '../../components/LandinBenefits/LandinBenefits';
