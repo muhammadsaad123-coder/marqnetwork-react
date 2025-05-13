@@ -3,6 +3,8 @@ import './Work.css';
 
 const Work = () => {
     return(
+
+        <div className="container">
         <section className="work">
             <div className="work__content">
                 <span className="work__tag">• How We Work?</span>
@@ -22,6 +24,7 @@ const Work = () => {
                 <img src="/images/work.png" alt="work" />
             </div>
         </section>
+        </div>
     );
 };
 

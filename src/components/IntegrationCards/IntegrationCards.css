@@ -83,3 +83,43 @@
   line-height: 1.6;
   margin: 0;
 }
+
+@media (max-width: 480px) {
+  .integration__section {
+    padding: 2rem 1rem;
+  }
+
+  .card__title h4 {
+    font-size: 1rem;
+  }
+
+  .card__desc {
+    font-size: 0.8rem;
+  }
+
+  .pro__badge {
+    font-size: 0.65rem;
+    padding: 2px 6px;
+  }
+}
+
+/* 💻 Extra Large Screens */
+@media (min-width: 1280px) {
+  .integration__section {
+    padding: 6rem 4rem;
+  }
+
+  .card__desc {
+    font-size: 0.95rem;
+  }
+
+  .card__label {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .integration__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

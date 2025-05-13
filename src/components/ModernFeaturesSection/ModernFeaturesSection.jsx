@@ -3,6 +3,7 @@ import './ModernFeaturesSection.css';
 
 const ModernFeaturesSection = () => {
   return (
+    <div className="container">
     <section className="modern-features">
       <div className="feature-card wide">
         <h3>Submit Unlimited Requests</h3>
@@ -44,6 +45,7 @@ const ModernFeaturesSection = () => {
         <p>Whether you're just starting or scaling up, our flexible pricing plans are designed to fit your needs and budget, so you can get started without any financial stress.</p>
       </div>
     </section>
+    </div>
   );
 };
 

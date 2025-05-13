@@ -2,7 +2,7 @@
 display: grid;
 grid-template-columns: 1fr;
 gap: 1.5rem;
-padding: 2rem;
+padding: 1.5rem;
 }
 
 .modern-features p {
@@ -27,6 +27,8 @@ padding: 2rem;
 
   .feature-card.wide {
     grid-column: span 1;
+    /* max-width: 90%; */
+    /* margin-inline: auto; */
     background: linear-gradient(to right, #1d2b1f, #103c1c);
   }
 

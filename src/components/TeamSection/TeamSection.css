@@ -206,4 +206,9 @@ body {
     height: 60px;
   }
 }
+@media (max-width: 480px) {
+  .team-members__grid {
+    grid-template-columns: 1fr !important;
+  }
+}
 

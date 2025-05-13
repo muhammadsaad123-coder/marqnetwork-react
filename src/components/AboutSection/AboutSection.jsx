@@ -4,6 +4,8 @@ import './AboutSection.css'
 
 const AboutSection = () => {
     return(
+
+        <div className="container">
         <section className="about">
             <div className="about__image">
                 <img src="/images/about.png" alt="about" />
@@ -38,6 +40,7 @@ const AboutSection = () => {
 
             
         </section>
+        </div>
     )
 };
 

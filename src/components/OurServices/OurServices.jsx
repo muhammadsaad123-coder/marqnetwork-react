@@ -3,6 +3,7 @@ import './OurServices.css';
 
 const OurServices = () => {
     return (
+        <div className="container">
         <section className="ourservices">
             <div className="ourservices__content">
                 <span className="ourservices__tag">• Our Services</span>
@@ -20,6 +21,7 @@ const OurServices = () => {
                 <img src="/images/ourservices.png" alt="Our Services" />
             </div>
         </section>
+        </div>
     );
 };
 

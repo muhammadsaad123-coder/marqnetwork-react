@@ -102,3 +102,46 @@
     border-radius: 50%;
     z-index: 0;
 }
+
+
+@media (max-width: 992px) {
+  .fieldsstudio {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+
+  .fieldsstudio__content {
+    text-align: center;
+  }
+
+  .fieldsstudio__content h1,
+  .fieldsstudio__content p {
+    text-align: center;
+  }
+
+  .fieldsstudio__buttons {
+    justify-content: center;
+  }
+}
+
+/* Small Screens - Mobiles */
+@media (max-width: 576px) {
+  .fieldsstudio__content h1 {
+    font-size: 2rem;
+  }
+
+  .fieldsstudio__content p {
+    font-size: 0.95rem;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .studio-image img {
+    max-width: 100%;
+  }
+}
