@@ -70,6 +70,18 @@
   opacity: 0.85;
 }
 
+.hero__background-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  opacity: 0.2;
+  pointer-events: none;
+  transform: rotate(0deg); /* horizontal */
+}
+
 /* Responsive Design */
 @media (max-width: 992px) {
   .hero {
