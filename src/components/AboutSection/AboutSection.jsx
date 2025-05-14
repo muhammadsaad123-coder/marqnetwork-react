@@ -1,5 +1,7 @@
 import React from "react";
 import './AboutSection.css'
+import { motion } from "framer-motion";
+
 
 
 const AboutSection = () => {
@@ -13,10 +15,15 @@ const AboutSection = () => {
 
             <div className="about__content">
                 <span className="about__tag">• About Landin</span>
-                <h2 className="about__headline">
+                <motion.h2 
+                className="about__headline"
+                   initial={{ x: -20, opacity: 0.6, filter: "blur(4px)" }}
+  whileInView={{ x: 0, opacity: 1, filter: "blur(0px)" }}
+  transition={{ duration: 1.2, ease: "easeOut" }}
+  viewport={{ once: true, amount: 0.5 }}>
           Building Stronger Brands<br />
           <span>Creating Impressions!</span>
-        </h2>
+        </motion.h2>
         <p className="about__description">
           Delivering high-quality, on-demand designs with precision.<br />
           Elevate your brand effortlessly, one snap at a time.
