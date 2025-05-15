@@ -26,9 +26,9 @@ const PortfolioSection = () => {
           <button className="portfolio__button">View Portfolio</button>
         </div>
 
-        <div className="glow-image">
+        {/* <div className="glow-image">
           <img src="/images/portfolio.png" alt="Glowing Visual" />
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -30,9 +30,9 @@ const ResultsSection = () => {
           <button className="results__button">Book a 15-min call</button>
         </div>
 
-        <div className="glow-image">
+        {/* <div className="glow-image">
           <img src="/images/result.png" alt="Glowing Visual" />
-        </div>
+        </div> */}
       </div>
     </section>
   );

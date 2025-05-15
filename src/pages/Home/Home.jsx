@@ -7,12 +7,14 @@ import Work from '../../components/Work/Work';
 import FeatureSection from '../../components/FeatureSection/FeatureSection';
 import FeatureGridSection from '../../components/FeatureGridSection/FeatureGridSection'
 import LandinBenefits from '../../components/LandinBenefits/LandinBenefits';
-import ModernFeaturesSection from '../../components/ModernFeaturesSection/ModernFeaturesSection';
+// import ModernFeaturesSection from '../../components/ModernFeaturesSection/ModernFeaturesSection';
 import PortfolioSection from '../../components/PortfolioSection/PortfolioSection';
 import OurServices from '../../components/OurServices/OurServices';
 import LaunchSection from '../../components/LaunchSection/LaunchSection';
 import JoinUsNow from '../../components/JoinUsNow/JoinUsNow';
 // import Footer from '../../components/Footer/Footer'
+import FAQSection from '../../components/FAQSection/FAQSection'
+import LandinBenefitCards from '../../components/LandinBenefitCards/LandinBenefitCards';
 import './Home.css'
 
 const Home = () => {
@@ -27,10 +29,12 @@ const Home = () => {
       <FeatureSection />
       <FeatureGridSection />
       <LandinBenefits />
-      <ModernFeaturesSection />
+      <LandinBenefitCards/>
+      {/* <ModernFeaturesSection /> */}
       <PortfolioSection />
       <OurServices />
       <LaunchSection />
+      <FAQSection/>
       <JoinUsNow />
       {/* <Footer /> */}
       

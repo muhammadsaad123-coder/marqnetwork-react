@@ -15,7 +15,7 @@
 
 /* Each card */
 .integration__card {
-  background: radial-gradient(circle at top left, #0a0a0f, #0c0c13);
+  background: linear-gradient(to right, #1d2b1f, #103c1c);
   border-radius: 16px;
   padding: 1.5rem;
   position: relative;

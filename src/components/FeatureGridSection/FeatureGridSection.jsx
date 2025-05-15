@@ -1,40 +1,78 @@
 import React from 'react';
 import './FeatureGridSection.css';
-import { FaDollarSign, FaBolt } from 'react-icons/fa';
 
-const features = [
+const cards = [
   {
-    icon: <FaDollarSign className="feature__icon" />,
-    title: "Boost Your Revenue",
-    label: "PRO",
-    subtitle: "Increase Profits",
-    description: "Unlock new revenue streams with data-driven strategies and marketing."
+    id: 1,
+    icon: '/images/revenue.png',
+    name: 'Boost Your Revenue',
+    label: 'Increase Profits',
+    description: 'Unlock new revenue streams with data-driven strategies and marketing.',
+    pro: true
   },
   {
-    icon: <FaBolt className="feature__icon yellow" />,
-    title: "Lightning Fast Delivery",
-    label: "PRO",
-    subtitle: "Quick Turnaround",
-    description: "Ensuring your deliverables are ready when you need them, with great quality."
+    id: 2,
+    icon: '/images/assets.png',
+    name: 'Customizable Assets',
+    label: 'Editable Designs',
+    description: 'Easily modify and personalize design elements to fit your brand’s identity.',
+    pro: false
   },
+  {
+    id: 3,
+    icon: '/images/bug.png',
+    name: 'Bug Less Development',
+    label: 'Optimized Code',
+    description: 'Our bug-less development ensures that your website runs smooth and fast.',
+    pro: false
+  },
+  {
+    id: 4,
+    icon: '/images/award.png',
+    name: 'Award-Winning Designs',
+    label: 'Recognized Design',
+    description: 'Stripe is our payment processing tool, providing a secure way to transactions.',
+    pro: false
+  },
+  {
+    id: 5,
+    icon: '/images/fastdev.png',
+    name: 'Lightning Fast Delivery',
+    label: 'Quick Turnaround',
+    description: 'Ensuring your deliverables are ready when you need them, with great quality.',
+    pro: true
+  },
+  {
+    id: 6,
+    icon: '/images/mobile.png',
+    name: 'Mobile Friendly',
+    label: 'Responsive',
+    description: 'Our mobile-friendly design ensures your design looks stunning across all devices. ',
+    pro: false
+  }
 ];
 
 const FeatureSection = () => {
   return (
-    <section className="feature__grid">
-      {Array(3).fill(0).map((_, rowIndex) =>
-        features.map((feature, i) => (
-          <div key={`${rowIndex}-${i}`} className="feature__card">
-            <div className="feature__top">
-              {feature.icon}
-              <div className="feature__title">{feature.title}</div>
-              <span className="feature__label">{feature.label}</span>
+    <section className="feature__section">
+      <div className="feature__grid">
+        {cards.map(({ id, icon, name, label, description, pro }) => (
+          <div key={id} className="feature__card">
+            <div className="card__top">
+              <img src={icon} alt={name} className="card__icon" />
+              <span className="card__arrow">↗</span>
             </div>
-            <div className="feature__subtitle">{feature.subtitle}</div>
-            <div className="feature__description">{feature.description}</div>
+
+            <div className="card__title">
+              <h4>{name}</h4>
+              {pro && <span className="pro__badge">PRO</span>}
+            </div>
+
+            <p className="card__label">{label}</p>
+            <p className="card__desc">{description}</p>
           </div>
-        ))
-      )}
+        ))}
+      </div>
     </section>
   );
 };

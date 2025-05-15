@@ -10,8 +10,8 @@ const Hero = () => {
           <motion.h1  initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}>
-            Premium <span>Agency</span><br />
-            for <span>Creatives.</span>
+            Premium Agency <br />
+           <span> for Creatives.</span>
           </motion.h1>
 
           <motion.p   initial={{ x: -20, opacity: 0.6, filter: "blur(4px)" }}
@@ -28,7 +28,7 @@ const Hero = () => {
         </div>
 
         <div className="hero__image">
-          <img src="images/herobg.svg" alt="Hero Background" />
+          <img src="images/herobg.png" alt="Hero Background" />
         </div>
       </div>
     </section>
