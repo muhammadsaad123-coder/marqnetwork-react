@@ -73,6 +73,20 @@
   text-align: left;
 }
 
+.about__description-wrapper{
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  /* margin-bottom: 1rem; */
+}
+
+.about__icon{
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  /* margin-top: 4px; */
+}
+
 .about__actions {
   display: flex;
   align-items: center;

@@ -29,8 +29,14 @@ const AboutSection = () => {
           Elevate your brand effortlessly, one snap at a time.
         </p>
 
-        <p className="about__description">From $0 to $500,000 in revenue.</p>
-        <p className="about__description">47% growth in new customers.</p>
+        <div className="about__description-wrapper">
+  <img src="/images/abouticon.png" alt="icon" className="about__icon" />
+  <p className="about__description">From $0 to $500,000 in revenue.</p>
+</div>
+<div className="about__description-wrapper">
+  <img src="/images/abouticon.png" alt="icon" className="about__icon" />
+  <p className="about__description">47% growth in new customers.</p>
+</div>
 
         <div className="about__actions">
 
