@@ -26,9 +26,7 @@ const LaunchSection = () => {
           <button className="launch__button">View About Landin</button>
         </div>
 
-        <div className="launch-image">
-          <img src="/images/launch.png" alt="Launch Visual" />
-        </div>
+        
       </div>
     </section>
   );

@@ -6,6 +6,10 @@ const OurServices = () => {
     return (
         <div className="container">
         <section className="ourservices">
+
+               <div className="ourservices__image">
+                <img src="/images/ourservices.png" alt="Our Services" />
+            </div>
             <div className="ourservices__content">
                 <span className="ourservices__tag">• Our Services</span>
                 <motion.h2 className="ourservices__headline"
@@ -22,9 +26,7 @@ const OurServices = () => {
                 </p>
             </div>
 
-            <div className="ourservices__image">
-                <img src="/images/ourservices.png" alt="Our Services" />
-            </div>
+         
         </section>
         </div>
     );

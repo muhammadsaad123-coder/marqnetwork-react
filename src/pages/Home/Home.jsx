@@ -34,7 +34,10 @@ const Home = () => {
       <PortfolioSection />
       <OurServices />
       <LaunchSection />
-      <FAQSection/>
+      
+      <div style={{textAlign:"left" , width: "100%"}}>
+        <FAQSection/>
+      </div>
       <JoinUsNow />
       {/* <Footer /> */}
       
