@@ -33,7 +33,7 @@ const LandinBenefitCards = () => {
 
       {/* Worry Free Pricing */}
       <div className="benefit-card">
-        <img src="/images/card2.png" alt="Worry Free Pricing" />
+        <img src="/images/card1.png" alt="Worry Free Pricing" />
         <div className="card-header">
           <h4>Worry Free Pricing</h4>
           <span className="pill">NEW</span>
@@ -45,7 +45,7 @@ const LandinBenefitCards = () => {
 
       {/* Quick Turnaround */}
       <div className="benefit-card small">
-        <img src="/images/card3.png" alt="Quick Turnaround" />
+        <img src="/images/card2.png" alt="Quick Turnaround" />
         <div className="card-header">
           <h4>Quick Turnaround</h4>
           <span className="pill">NEW</span>
@@ -57,7 +57,7 @@ const LandinBenefitCards = () => {
 
       {/* Publish in Seconds */}
       <div className="benefit-card small">
-        <img src="/images/card1.png" alt="Publish in Seconds" />
+        <img src="/images/card3.png" alt="Publish in Seconds" />
         <h4>Publish in Seconds</h4>
         <p>
           Publish your site in seconds with our streamlined process.

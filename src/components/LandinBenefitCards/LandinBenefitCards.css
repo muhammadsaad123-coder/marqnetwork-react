@@ -7,7 +7,7 @@
   grid-template-columns: 2fr 1fr;
   gap: 24px;
   padding: 40px 20px;
-  /* background-color: #0a0a0a; */
+ 
   font-family: 'Inter', sans-serif;
 }
 
@@ -34,18 +34,26 @@
 
 .benefit-card:nth-child(2) {
   grid-area: card2;
+  
+  
 }
 
 .benefit-card:nth-child(3) {
   grid-area: card3;
+ 
+ 
 }
 
 .benefit-card:nth-child(4) {
   grid-area: card4;
+  width: 40%;
 }
 
 .benefit-card:nth-child(5) {
   grid-area: card5;
+   width: 80%;
+     
+   
 }
 
 .benefit-card.small {
