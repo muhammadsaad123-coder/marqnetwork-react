@@ -1,0 +1,31 @@
+.logo-slider {
+  overflow: hidden;
+  width: 60%;
+  background-color: #000; 
+  padding: 2rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid grey;
+}
+
+.logo-track {
+  display: flex;
+  width: fit-content;
+}
+
+.logo-item {
+  flex: 0 0 auto;
+  padding: 0 2rem;
+  opacity: 0.6;
+  filter: grayscale(100%);
+  transition: opacity 0.3s ease;
+}
+
+.logo-item img {
+  height: 70px; 
+  width: auto;
+}
+
+.logo-item:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}

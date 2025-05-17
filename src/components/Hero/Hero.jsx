@@ -1,6 +1,7 @@
 import React from "react";
 import './Hero.css';
 import { motion } from "framer-motion";
+import LogoSlider from "../LogoSlider/LogoSlider";
 
 const Hero = () => {
   return (
@@ -25,6 +26,7 @@ const Hero = () => {
             <button className="primary-btn">Connect With Us</button>
             <button className="secondary-btn">What is Landin?</button>
           </div>
+          <LogoSlider/>
         </div>
 
         <div className="hero__image">
