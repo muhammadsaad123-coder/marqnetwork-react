@@ -2,6 +2,8 @@ import React from 'react';
 import './ResultsSection.css';
 import { motion } from "framer-motion";
 
+import InfiniteCardsSlider from '../InfiniteCardsSlider/InfiniteCardsSlider';
+
 
 const ResultsSection = () => {
   return (
@@ -30,9 +32,10 @@ const ResultsSection = () => {
           <button className="results__button">Book a 15-min call</button>
         </div>
 
-        {/* <div className="glow-image">
-          <img src="/images/result.png" alt="Glowing Visual" />
-        </div> */}
+
+        <InfiniteCardsSlider/>
+
+     
       </div>
     </section>
   );
