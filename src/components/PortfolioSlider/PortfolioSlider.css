@@ -20,7 +20,7 @@
 
 /* === Slide Section === */
 .portfolio-slide {
-  height: 100vh;
+  height: 120vh;
   scroll-snap-align: center;
   display: flex;
   align-items: center;
@@ -32,9 +32,9 @@
 .portfolio-card {
  
   border-radius: 20px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+ 
   padding: 1rem;
-  width: 170vw; /* Increased width */
+  width: 180vw; /* Increased width */
   max-width: 1400px; /* Adjust based on your layout */
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -42,6 +42,7 @@
 
 .portfolio-img {
   width: 100%;
+ 
   border-radius: 16px;
   object-fit: cover;
   display: block;

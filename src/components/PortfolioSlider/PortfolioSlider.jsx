@@ -55,7 +55,7 @@ const PortfolioSlider = () => {
             <div className="portfolio-content">
               <div className="portfolio-header">
                 <h2>{item.title}</h2>
-                <span>{item.year}</span>
+                {/* <span>{item.year}</span> */}
               </div>
               <div className="progress-bar">
                 <div
