@@ -1,0 +1,101 @@
+/* === Global Reset === */
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* === Hide Scrollbar === */
+.portfolio-slider {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+
+.portfolio-slider::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+/* === Slide Section === */
+.portfolio-slide {
+  height: 100vh;
+  scroll-snap-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* === Card Design === */
+.portfolio-card {
+ 
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  width: 170vw; /* Increased width */
+  max-width: 1400px; /* Adjust based on your layout */
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1.2rem;
+}
+
+/* === Content === */
+.portfolio-content {
+  padding: 0 1rem;
+}
+
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.portfolio-header h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.portfolio-header span {
+  opacity: 0.6;
+  font-size: 0.95rem;
+}
+
+/* === Progress Bar === */
+.progress-bar {
+  background-color: #222;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00ff88, #00aa55);
+  transition: width 0.4s ease;
+}
+
+/* === Tags === */
+.portfolio-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: #1a1a1a;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  color: #ddd;
+}

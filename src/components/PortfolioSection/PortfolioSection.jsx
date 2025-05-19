@@ -1,6 +1,7 @@
 import React from 'react';
 import './PortfolioSection.css'; // new CSS file
 import { motion } from "framer-motion";
+import PortfolioSlider from '../PortfolioSlider/PortfolioSlider';
 
 const PortfolioSection = () => {
   return (
@@ -26,9 +27,10 @@ const PortfolioSection = () => {
           <button className="portfolio__button">View Portfolio</button>
         </div>
 
-        {/* <div className="glow-image">
-          <img src="/images/portfolio.png" alt="Glowing Visual" />
-        </div> */}
+        <br />
+        <br />
+
+        <PortfolioSlider/>
       </div>
     </section>
   );
