@@ -4,29 +4,51 @@ import "./InfiniteCardsSlider.css";
 
 const cards = [
   {
-    city: " Excelus (Gov-IT)",
+    city: "Excelus (Gov-IT)",
     company: "Cyber-Security Overhaul",
     label: "NEW",
-    description: "  Hardened infra, passed Federal audit with zero findings and doubled site speed.",
-    stats: ["100 % Compliance Pass", " 70 % Faster Load"],
+    description: "Hardened infra, passed Federal audit with zero findings and doubled site speed.",
+    stats: ["100 % Compliance Pass", "70 % Faster Load"],
     image: "/images/basel.png"
   },
   {
-    city: "London",
-    company: "Raven Company Inc",
-    description: "Streamlined operations, reducing costs by using automation solutions.",
-    stats: ["25% Conversion Rates", "50% Reduced in CPA"],
+    city: "GA Tax Lien Boot Camp",
+    company: "Webinar-to-Boot-Camp Funnel",
+    description: "Packed 250-400 attendees every 2 weeks and upsold a $3,999 boot-camp.",
+    stats: ["37 % Webinar-→-Sale Rate", "$3.2 M Pipeline"],
     image: "/images/london.png"
   },
   {
-    city: "Manila",
-    company: "Gotham Wonder",
+    city: "JeCouturier",
+    company: "Custom E-Com for Tailoring",
     label: "FRESH",
-    description: "Boosted customer engagement with a digital presence and targeted campaigns.",
-    stats: ["60% Increased Traffic", "35% Growth in Sales"],
+    description: "Launched bespoke suit store— full funnel, CRM, and automation.",
+    stats: ["4 × Online Sales", "65 % Repeat Orders"],
     image: "/images/manila.png"
   },
+  {
+    city: "Luna Health",
+    company: "MVP to Market in 90 Days",
+    description: "Built & shipped tele-health app; rapid user uptake post-launch.",
+    stats: ["45 k App Downloads"],
+    image: "/images/basel.png"
+  },
+  {
+    city: "Collaborative Creative",
+    company: "Done-For-You Funnel Ops",
+    description: "Managed email + funnel; doubled rev while client slept.",
+    stats: ["120 % Revenue Lift", "250 % Email CTR"],
+    image: "/images/london.png"
+  },
+  {
+    city: "Way Fields Studio",
+    company: "AI-Powered Lead Engine",
+    description: "Deployed AI site + ads, slashed acquisition costs.",
+    stats: ["52 % Lead-to-Call Rate", "40 % Lower CAC"],
+    image: "/images/manila.png"
+  }
 ];
+
 
 const InfiniteCardsSlider = () => {
   const duplicated = [...cards, ...cards]; // For infinite loop effect
