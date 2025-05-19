@@ -4,11 +4,11 @@ import "./InfiniteCardsSlider.css";
 
 const cards = [
   {
-    city: "Basel",
-    company: "Crimson Studio",
+    city: " Excelus (Gov-IT)",
+    company: "Cyber-Security Overhaul",
     label: "NEW",
-    description: "Achieved an increase in sales within six months through a customized strategy.",
-    stats: ["30% Increase in Sales", "40% Boost in Retention"],
+    description: "  Hardened infra, passed Federal audit with zero findings and doubled site speed.",
+    stats: ["100 % Compliance Pass", " 70 % Faster Load"],
     image: "/images/basel.png"
   },
   {

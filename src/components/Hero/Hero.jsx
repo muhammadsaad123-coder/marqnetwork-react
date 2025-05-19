@@ -11,20 +11,20 @@ const Hero = () => {
           <motion.h1  initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}>
-            Premium Agency <br />
-           <span> for Creatives.</span>
+            Premium Digital Partner <br />
+           <span> for Visionary Brands</span>
           </motion.h1>
 
           <motion.p   initial={{ x: -20, opacity: 0.6, filter: "blur(4px)" }}
       animate={{ x: 0, opacity: 1, filter: "blur(0px)" }}
       transition={{ duration: 1.2, ease: "easeOut" }}>
-            We specialize in crafting unique digital presence<br />
-            that help businesses grow and stand out in their industries.
+            “From brand strategy and experience design to custom software, automation, and growth marketing, <br />
+            MarQ Networks engineers end-to-end solutions that move the revenue needle.”
           </motion.p >
 
           <div className="hero__buttons">
             <button className="primary-btn">Connect With Us</button>
-            <button className="secondary-btn">What is Landin?</button>
+            <button className="secondary-btn">Explore the Stack</button>
           </div>
           <LogoSlider/>
         </div>

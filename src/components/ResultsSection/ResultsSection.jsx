@@ -24,8 +24,8 @@ const ResultsSection = () => {
         </motion.h2>
 
         <p className="results__description">
-        At the core of everything we do lies a commitment to delivering <br />
-        measurable outcomes that drive your success.
+       At MarQ Networks, every pixel and line of code is measured by the numbers it moves. <br />
+        Here’s a snapshot of brands we’ve elevated—across strategy, design, and tech.
         </p>
 
         <div className="results__actions">
