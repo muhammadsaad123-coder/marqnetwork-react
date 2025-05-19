@@ -75,7 +75,7 @@
 }
 
 .step-card {
-  background: radial-gradient(ellipse at top left, rgba(30, 30, 60, 0.6), rgba(10, 10, 20, 0.9));
+  background: linear-gradient(to top right, #56B848, #000000);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   padding: 2rem;

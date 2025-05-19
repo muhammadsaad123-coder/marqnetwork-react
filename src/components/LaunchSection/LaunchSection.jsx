@@ -2,6 +2,8 @@ import React from 'react';
 import './LaunchSection.css'; // new CSS file
 import { motion } from "framer-motion";
 
+import ImageSlider from '../ImageSlider/ImageSlider';
+
 const LaunchSection = () => {
   return (
     <section className="launch">
@@ -25,6 +27,8 @@ const LaunchSection = () => {
         <div className="launch__actions">
           <button className="launch__button">View About Landin</button>
         </div>
+
+        <ImageSlider/>
 
         
       </div>
