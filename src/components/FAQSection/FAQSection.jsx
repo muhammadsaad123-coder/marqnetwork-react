@@ -3,28 +3,28 @@ import './FAQSection.css';
 
 const faqs = [
   {
-    question: "What do I need to get started?",
-    answer: "You just need basic computer knowledge and the project files to begin customization."
+    question: "What will my investment be—and what’s included?",
+    answer: "Every build is quoted up-front, flat-fee. No hourly surprises. Packages start at $4.5K for Brand + UX and $7.5K for Full-Stack Dev, covering research, strategy, design, code, QA, launch, and 30-day support."
   },
   {
-    question: "What kind of customization is available?",
-    answer: "You can customize colors, fonts, layouts, and even component structures using modern tools."
+    question: "How fast can we launch?",
+    answer: "MVP websites: 15 business days. Full platforms: 4–8 weeks (depending on integrations). Weekly sprints, same-day feedback loops, and a dedicated PM keep momentum high."
   },
   {
-    question: "How easy is it to edit for beginners?",
-    answer: "It's beginner-friendly — everything is modular, well-commented, and built with simplicity in mind."
+    question: "What kind of ROI have past clients seen?",
+    answer: "GA Tax Lien Bootcamp → 400 registrants / webinar & $3.9 M in program sales. Customex e-commerce → 47% rise in new customers in 60 days. Bond Interiors → 30% lead-to-quote lift after site + funnel overhaul."
   },
   {
-    question: "Let me know more about moneyback guarantee?",
-    answer: "We offer a 100% money-back guarantee within the first 14 days if you're not satisfied."
+    question: "How will we communicate across time zones?",
+    answer: "Your core team works 9 AM–5 PM EST for real-time Slack & Zoom. A second offshore pod handles overnight production, so progress continues 24/7 without you staying up late."
   },
   {
-    question: "Do I need to know how to code?",
-    answer: "Nope! Most changes can be made visually or with simple tweaks. No advanced coding required."
+    question: "Who owns the code, designs, and data?",
+    answer: "You do—100%. We transfer source files (Figma, Webflow, Git repo), admin credentials, and a plain-English license letter at hand-off. No lock-ins, ever."
   },
   {
-    question: "What will I get after purchasing the template?",
-    answer: "You’ll receive all source files, documentation, and access to future updates."
+    question: "What if I’m not happy with the final product?",
+    answer: "Our 14-day money-back guarantee covers scope alignment and quality benchmarks. Missed expectations? You get a full refund—no legal gymnastics. We’ve issued refunds on <3% of projects since 2016."
   }
 ];
 

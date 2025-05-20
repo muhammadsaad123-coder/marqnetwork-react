@@ -18,8 +18,7 @@ const Hero = () => {
           <motion.p   initial={{ x: -20, opacity: 0.6, filter: "blur(4px)" }}
       animate={{ x: 0, opacity: 1, filter: "blur(0px)" }}
       transition={{ duration: 1.2, ease: "easeOut" }}>
-            “From brand strategy and experience design to custom software, automation, and growth marketing, 
-            MarQ Networks engineers end-to-end solutions that move the revenue needle.”
+           “We weave our 5-Pillar Service Stack—Strategy & Digital Transformation, Brand + Experience Design, Custom Software & Automation, Growth Marketing & Lead Gen, and our Off-Shore Excellence Hub—into one friction-free engine that helps ambitious companies launch faster and scale 40 % smarter.”
           </motion.p >
 
           <div className="hero__buttons">
