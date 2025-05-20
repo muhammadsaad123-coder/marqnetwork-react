@@ -25,16 +25,24 @@ const LandinBenefits = () => {
       {/* Feature Tags */}
       <div className="benefits__tags">
         {[
-          'Enhanced UX', 'Boosted Conversions', 'Fast Loading',
-          'SEO Optimized', 'Customizable', 'Scalable',
-          'Increased Engagement', 'Expandable', 'Secure', 'User-Friendly'
+          'Enhanced UX',
+  'Boosted Conversions',
+  'Fast Loading',
+  'SEO-Ready',
+  'Customizable',
+  'Scalable',
+  'Increased Engagement',
+  'Expandable',
+  'Secure',
+  'User-Friendly'
         ].map((tag, index) => (
           <span key={index} className="benefit__tag">{tag}</span>
         ))}
+        <button className="benefits__cta">Contact Now</button>
       </div>
 
-      {/* Call to Action Button */}
-      <button className="benefits__cta">Contact Now</button>
+      
+      
     </section>
   );
 };

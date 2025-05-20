@@ -6,6 +6,7 @@
     align-items: center;
     padding-left: 5rem;
     padding-right: 2rem;
+    margin-top: 10px;
 }
 
 .hero__container {
@@ -22,7 +23,7 @@
 }
 
 .hero__content h1{
-    font-size: 3.5rem;
+    font-size: 3.1rem;
     font-weight: 600;
     line-height: 1.2;
     font-family: 'Poppins', sans-serif;
@@ -90,7 +91,8 @@
   overflow: hidden; 
   max-width: 300%;
   padding: 1rem;
-   /* top: -50px; */
+   /* top: 50px; */
+   margin-bottom: 60px;
  
 }
 

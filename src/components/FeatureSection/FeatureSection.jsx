@@ -20,12 +20,12 @@ const FeatureSection = () => {
         </motion.h2>
 
         <p className="feature__description">
-        Get unlimited design features that give you the freedom<br />
-        to create without boundaries.
+        Six power-ups that turn every MarQ Networks<br />
+        project into measurable growth
         </p>
 
         <div className="feature__actions">
-          <button className="feature__button">View About Landin</button>
+          <button className="feature__button">View About MarQ</button>
         </div>
 
         

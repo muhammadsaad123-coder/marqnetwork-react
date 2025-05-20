@@ -4,33 +4,72 @@ import { motion } from "framer-motion";
 
 const services = [
   {
-    title: "Full Website Sprint",
-    desc: "By streamlining the process and focusing on key milestones, we ensure your website is ready to go live quickly, without sacrificing quality.",
+    title: "Digital Strategy Sprint",
+    desc: "Align vision, goals & tech in 2 weeks.",
     icon: "/images/sprint.png",
-    price: "$2500 / Project",
-    duration: "2 – 3 Week",
-    features: ["Design + Framer Development", "Interactive Elements"],
+    price: " Strategy & Digital Transformation",
+    duration: "Consultancy",
+    features: [
+      " North-Star roadmap",
+      " Ops & tech stack blueprint",
+      " Quick-win priority list"
+    ],
     endIcon: "/images/abouticon.png"
   },
   {
-    title: "Landing Page Blitz",
-    desc: "Quickly deliver a stunning landing page with interactive UI and fast loading built in Framer and React stack.",
+    title: "Brand & UX Makeover",
+    desc: "From logo to clickable prototype.",
     icon: "/images/package.png",
-    price: "$1200 / Page",
-    duration: "1 Week",
-    features: ["UI/UX Design", "Fast Deployment"],
+    price: " Brand + Experience Design",
+    duration: "Design",
+    features: [
+      " Visual identity kit",
+      " UX wireframes in Figma",
+      " Reusable design system"
+    ],
     endIcon: "/images/abouticon.png"
   },
   {
-    title: "E-Commerce Build",
-    desc: "From product listings to checkout, we design and develop high-performance storefronts with engaging UI.",
+    title: "MVP Build + Automation",
+    desc: "Code, test & deploy—fast.",
     icon: "/images/stack.png",
-    price: "$5000+ / Store",
-    duration: "3 – 5 Week",
-    features: ["Shop Integration", "Optimized UI/UX"],
+    price: " Custom Software & Automation",
+    duration: "Development",
+    features: [
+      " Full-stack React / Laravel",
+      " Zapier / Make automations",
+      " CI/CD & documentation"
+    ],
+    endIcon: "/images/abouticon.png"
+  },
+  {
+    title: "Lead-Gen Engine",
+    desc: "Funnel, emails & ads done-for-you.",
+    icon: "/images/stack.png",
+    price: " Growth Marketing & Lead Gen",
+    duration: "Marketing",
+    features: [
+      " High-converting funnel",
+      " CRM & nurture emails",
+      " Paid-ads management"
+    ],
+    endIcon: "/images/abouticon.png"
+  },
+  {
+    title: "Dedicated Remote Pod",
+    desc: "Scale with a plug-in team at 30% less cost.",
+    icon: "/images/stack.png",
+    price: " Off-Shore Excellence Hub",
+    duration: "Off-Shore",
+    features: [
+      " Cross-disciplinary talent",
+      " EST time-zone overlap",
+      " Flat, transparent billing"
+    ],
     endIcon: "/images/abouticon.png"
   }
 ];
+
 
 const OurServices = () => {
   return (
@@ -50,12 +89,12 @@ const OurServices = () => {
           transition={{ duration: 1.2, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.5 }}
         >
-          Build Fast With <br />
-          <span>Purposeful Packages</span>
+          Strategy, Design, Code, Growth & Scale.<br />
+          <span>Covered by marQ Networks</span>
         </motion.h2>
 
         <p className="ourservices__description">
-          Explore curated service packages that blend design, technology, and execution into efficient delivery cycles.
+         Feel free to break the line after the period (or keep it all on one line) to match your layout.
         </p>
 
         <div className="ourservices__cards">

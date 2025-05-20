@@ -41,7 +41,7 @@ const steps = [
     title: "Result",
     subtitle: "Stage 4",
     desc: "Most MarQ projects move from kickoff to live launch in ≤ 45 days—saving clients 40% in cost and months in opportunity loss.",
-    icon: "/images/Handoff.png", // Add an icon in your public/images folder
+    icon: "/images/Handoff.png", 
     actions: [
       "✔ 45-day delivery",
       "✔ 40% cost saving",

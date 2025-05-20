@@ -6,48 +6,54 @@ const cards = [
     id: 1,
     icon: '/images/revenue.png',
     name: 'Boost Your Revenue',
-    label: 'Increase Profits',
-    description: 'Unlock new revenue streams with data-driven strategies and marketing.',
+    label: 'Data-Driven Growth',
+    description:
+      'Proven funnels & CRO tweaks that add 20–40% new revenue without extra ad spend.',
     pro: true
   },
   {
     id: 2,
     icon: '/images/assets.png',
-    name: 'Customizable Assets',
-    label: 'Editable Designs',
-    description: 'Easily modify and personalize design elements to fit your brand’s identity.',
+    name: 'Customisable Assets',
+    label: 'Edit • Re-use • Scale',
+    description:
+      '100% Figma + dev files—swap colors, copy, or layouts in minutes and stay on brand everywhere.',
     pro: false
   },
   {
     id: 3,
     icon: '/images/bug.png',
-    name: 'Bug Less Development',
-    label: 'Optimized Code',
-    description: 'Our bug-less development ensures that your website runs smooth and fast.',
+    name: 'Bug-Free Development',
+    label: 'Optimised Code',
+    description:
+      'Rigorous QA + automated tests mean your site ships lightning-fast and crash-proof on Day 1.',
     pro: false
   },
   {
     id: 4,
     icon: '/images/award.png',
-    name: 'Award-Winning Designs',
-    label: 'Recognized Design',
-    description: 'Stripe is our payment processing tool, providing a secure way to transactions.',
+    name: 'Award-Winning Design',
+    label: 'Recognised Creativity',
+    description:
+      'Visual systems praised by Awwwards & Behance that make your brand impossible to ignore.',
     pro: false
   },
   {
     id: 5,
     icon: '/images/fastdev.png',
-    name: 'Lightning Fast Delivery',
+    name: 'Lightning-Fast Delivery',
     label: 'Quick Turnaround',
-    description: 'Ensuring your deliverables are ready when you need them, with great quality.',
+    description:
+      'Average task turnaround: 2–3 biz days—launch campaigns while others are still mocking up.',
     pro: true
   },
   {
     id: 6,
     icon: '/images/mobile.png',
-    name: 'Mobile Friendly',
-    label: 'Responsive',
-    description: 'Our mobile-friendly design ensures your design looks stunning across all devices. ',
+    name: 'Mobile-First Builds',
+    label: 'Responsive & Ready',
+    description:
+      'Seamless performance on every device, boosting mobile conversions by up to 35%.',
     pro: false
   }
 ];

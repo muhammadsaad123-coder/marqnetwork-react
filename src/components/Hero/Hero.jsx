@@ -18,7 +18,7 @@ const Hero = () => {
           <motion.p   initial={{ x: -20, opacity: 0.6, filter: "blur(4px)" }}
       animate={{ x: 0, opacity: 1, filter: "blur(0px)" }}
       transition={{ duration: 1.2, ease: "easeOut" }}>
-            “From brand strategy and experience design to custom software, automation, and growth marketing, <br />
+            “From brand strategy and experience design to custom software, automation, and growth marketing, 
             MarQ Networks engineers end-to-end solutions that move the revenue needle.”
           </motion.p >
 
