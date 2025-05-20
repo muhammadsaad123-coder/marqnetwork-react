@@ -64,10 +64,13 @@ const PortfolioSlider = () => {
                   <span>{item.year}</span>
                 </div>
                 <div className="progress-bar">
-                 <div
-  className="progress-fill"
-  style={{ width: `${item.progress}%` }}
-/>
+
+
+
+                  <div
+                    className="progress-fill"
+                    style={{ width: `${item.progress}%` }}
+                  />
 
                 </div>
                 <div className="portfolio-tags">
