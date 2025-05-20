@@ -8,7 +8,7 @@ const AboutSection = () => {
         {/* Tag */}
         <div className="deep-dive-tag">
           <span className="year">2025</span>
-          <span className="tag-text">Dig Deep About Us</span>
+          <span className="tag-text">Dig Deep About Us ..</span>
         </div>
 
         {/* Headings */}
