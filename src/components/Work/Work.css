@@ -61,6 +61,18 @@
 }
 
 
+.step-card {
+  background-image: url('/images/works.png'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  color: #fff;
+  position: relative;
+  backdrop-filter: blur(12px);}
 
 
 
