@@ -7,23 +7,46 @@ const steps = [
   {
     title: "Kickoff",
     subtitle: "Stage 1",
-    desc: "The kickoff stage is where everything begins. We align with you to understand your goals, vision, and expectations. Through in-depth discussions and thorough research.",
+    desc: "Deep-dive workshop to unpack goals, users, budget, and KPIs. Includes competitive audit + quick-win matrix and a 90-day execution roadmap with timelines & owners.",
     icon: "/images/Kickoff.png",
-    actions: ["Comprehensive Consultation", "Project Roadmap"]
+    actions: [
+      "✔ Crystal-clear scope",
+      "✔ Fixed milestones & cost",
+      "✔ Slack/ClickUp access on Day 1"
+    ]
   },
   {
     title: "Execution",
     subtitle: "Stage 2",
-    desc: "Execution is where the plan takes form. We translate ideas into reality through agile sprints, collaborative development, and constant optimization.",
+    desc: "This is where the magic happens—design, build, and iterate using agile sprints. We collaborate closely with you to translate ideas into reality.",
     icon: "/images/Execution.png",
-    actions: ["Agile Execution", "Live Collaboration"]
+    actions: [
+      "✔ Agile sprints",
+      "✔ Real-time updates",
+      "✔ Continuous optimization"
+    ]
   },
   {
-    title: "Handoff",
+    title: "Launch & Handoff",
     subtitle: "Stage 3",
-    desc: "With development complete, we transition the finished product to you with documentation and ongoing support to ensure a seamless handoff.",
+    desc: "We deploy to your preferred stack (AWS, Vercel, Shopify, HubSpot). Includes hand-over call, step-by-step playbooks, and 30-day post-launch support.",
     icon: "/images/Handoff.png",
-    actions: ["Ongoing Support", "Launch Readiness"]
+    actions: [
+      "✔ Stress-free go-live",
+      "✔ You own 100% of IP & files",
+      "✔ Optional growth retainer"
+    ]
+  },
+  {
+    title: "Result",
+    subtitle: "Stage 4",
+    desc: "Most MarQ projects move from kickoff to live launch in ≤ 45 days—saving clients 40% in cost and months in opportunity loss.",
+    icon: "/images/Handoff.png", // Add an icon in your public/images folder
+    actions: [
+      "✔ 45-day delivery",
+      "✔ 40% cost saving",
+      "✔ Faster time to market"
+    ]
   }
 ];
 
@@ -39,12 +62,13 @@ const Work = () => {
           transition={{ duration: 1.2, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.5 }}
         >
-          We Simplify The Journey <br />
-          <span>From Design To Launch</span>
+          We Streamline Every Step <br />
+          <span>From Idea to Impact</span>
         </motion.h2>
+
         <p className="work__description">
-          We make it easy to bring your ideas to life, guiding you from
-          concept to a fully launched product.
+          We’ve battle-tested a three-stage framework that eliminates guesswork,
+          keeps you in the loop, and gets your product in market faster.
         </p>
 
         <div className="work__steps">
@@ -58,16 +82,25 @@ const Work = () => {
               </div>
               <h3 className="step-card__title">{step.title}</h3>
               <p className="step-card__desc">{step.desc}</p>
-              <div className="step-card__actions">
-                {step.actions.map((action, i) => (
-                  <span key={i} className="step-card__action">
-                    {action}
-                  </span>
-                ))}
-              </div>
+             <div className="step-card__actions">
+  {step.actions.map((action, i) => (
+    <span key={i} className="step-card__action">
+      {action}
+    </span>
+  ))}
+
+  {/* Show CTA button only in last step (Stage 4) */}
+  {index === steps.length - 1 && (
+    <button className="work__cta-button" style={{ marginTop: "20px" }}>
+      Book an Appointment
+    </button>
+  )}
+</div>
+
             </div>
           ))}
         </div>
+
       </div>
 
       <div className="work__right">
