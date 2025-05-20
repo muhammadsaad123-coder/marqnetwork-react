@@ -11,6 +11,8 @@
 /* Content */
 .join__content {
   flex: 1;
+  max-width:1200px;
+  margin:0 auto;
 }
 
 .join__tag {
@@ -24,9 +26,10 @@
 
 .join__headline {
   font-size: 2.5rem;
-  line-height: 1.3;
+  line-height: 1.2;
   font-family: 'Poppins', sans-serif;
   margin: 1.5rem 0;
+  font-weight:500;
 }
 
 .join__headline span {
