@@ -71,17 +71,16 @@
 .service-card {
   /* background:linear-gradient(to bottom right, #0e1f16, #000); */
   background-image: url(/images/services.jpg);
-  background-size: cover;
+background-size: cover;
   background-position: center;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 20px;
+  background-repeat: no-repeat;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
   padding: 2rem;
   color: #fff;
   position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  backdrop-filter: blur(12px);
 }
 
 .service-card__top {
