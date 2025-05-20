@@ -75,7 +75,8 @@
 }
 
 .step-card {
-  background: linear-gradient(to top right, #56B848, #000000);
+  /* background: linear-gradient(to top right, #56B848, #000000); */
+  background-image: url(/images/workbg.jpg);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   padding: 2rem;
