@@ -61,6 +61,7 @@ const PortfolioSlider = () => {
                 <div
                   className="progress-fill"
                   style={{ width: `${item.progress}%` }}
+
                 />
               </div>
               <div className="portfolio-tags">

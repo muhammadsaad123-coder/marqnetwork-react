@@ -69,7 +69,8 @@
 
 /* ========== CARD DESIGN MATCHING SCREENSHOT ========== */
 .service-card {
-  background:linear-gradient(to bottom right, #0e1f16, #000);
+  /* background:linear-gradient(to bottom right, #0e1f16, #000); */
+  background-image: url(/images/services.jpg);
   background-size: cover;
   background-position: center;
   border: 1px solid rgba(255, 255, 255, 0.08);
