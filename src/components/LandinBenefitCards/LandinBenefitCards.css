@@ -1,18 +1,14 @@
 .benefit-wrapper {
-  display: grid;
-  grid-template-areas:
-    "large card2"
-    "large card3"
-    "card4 card5";
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 24px;
   padding: 40px 20px;
- 
   font-family: 'Inter', sans-serif;
+  justify-content: center;
 }
 
 .benefit-card {
- background: linear-gradient(to top right, #56B848, #000000); 
+  background: linear-gradient(90deg, #1715 0%, #000 100%);
   border-radius: 16px;
   padding: 20px;
   color: #fff;
@@ -20,6 +16,17 @@
   flex-direction: column;
   gap: 12px;
   text-align: left;
+  flex: 1 1 calc(33.333% - 24px); /* 3 cards per row */
+  min-width: 300px;
+  max-width: 400px;
+  border: 1px solid rgba(0, 255, 136, 0.08);
+  box-shadow: 0 0 24px rgba(0, 255, 136, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 255, 136, 0.12);
 }
 
 .benefit-card img {
@@ -29,31 +36,8 @@
 }
 
 .benefit-card.large {
-  grid-area: large;
-}
-
-.benefit-card:nth-child(2) {
-  grid-area: card2;
-  
-  
-}
-
-.benefit-card:nth-child(3) {
-  grid-area: card3;
- 
- 
-}
-
-.benefit-card:nth-child(4) {
-  grid-area: card4;
-  /* width: 40%; */
-}
-
-.benefit-card:nth-child(5) {
-  grid-area: card5;
-   /* width: 80%; */
-     
-   
+  flex: 1 1 calc(66.666% - 24px); 
+  max-width: 820px;
 }
 
 .benefit-card.small {
@@ -76,7 +60,7 @@ h3, h4 {
 
 p {
   font-size: 14px;
-  color: #aaa;
+  color: #bbb;
   line-height: 1.5;
   margin: 0;
   text-align: left;
@@ -99,34 +83,40 @@ p {
 }
 
 .primary-btn {
-  background-color: #00ff88;
-  color: #000;
-  padding: 10px 16px;
+  background-color: #56B848;
+  color: #fff;
+  padding: 20px 20px;
   border: none;
   border-radius: 10px;
   font-weight: 600;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #00e676;
 }
 
 .secondary-btn {
-  background-color: #1c1c1c;
+  background-color: #fff;
+ 
   color: #fff;
   padding: 10px 16px;
   border: 1px solid #333;
   border-radius: 10px;
   font-weight: 500;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* Responsive Styles */
+.secondary-btn:hover {
+  background-color: #2a2a2a;
+}
+
+/* Responsive */
 @media (max-width: 1024px) {
-  .benefit-wrapper {
-    grid-template-areas:
-      "large"
-      "card2"
-      "card3"
-      "card4"
-      "card5";
-    grid-template-columns: 1fr;
+  .benefit-card, .benefit-card.large {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
