@@ -1,0 +1,124 @@
+.benefit-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 40px 20px;
+  font-family: 'Inter', sans-serif;
+  justify-content: center;
+}
+
+
+
+.benefit-card {
+  background: linear-gradient(90deg, #1715 0%, #000 100%);
+  border-radius: 16px;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+  flex: 1 1 calc(33.333% - 24px); /* 3 cards per row */
+  min-width: 300px;
+  max-width: 400px;
+  border: 1px solid rgba(0, 255, 136, 0.08);
+  box-shadow: 0 0 24px rgba(0, 255, 136, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 255, 136, 0.12);
+}
+
+.benefit-card img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.benefit-card.large {
+  flex: 1 1 calc(66.666% - 24px); 
+  max-width: 820px;
+}
+
+.benefit-card.small {
+  min-height: 230px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+h3, h4 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 600;
+  text-align: left;
+}
+
+p {
+  font-size: 14px;
+  color: #bbb;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+}
+
+.pill {
+  background-color: #00ff88;
+  color: #000;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.primary-btn {
+  background-color: #56B848;
+  color: #fff;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #00e676;
+}
+
+.secondary-btn {
+  background-color: #fff;
+ 
+  color: #fff;
+  padding: 10px 16px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background-color: #2a2a2a;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .benefit-card, .benefit-card.large {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
