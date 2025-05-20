@@ -15,7 +15,7 @@ const faqs = [
     answer: "GA Tax Lien Bootcamp → 400 registrants / webinar & $3.9 M in program sales. Customex e-commerce → 47% rise in new customers in 60 days. Bond Interiors → 30% lead-to-quote lift after site + funnel overhaul."
   },
   {
-    question: "How will we communicate across time zones?",
+    question: "How will we communicate across time ",
     answer: "Your core team works 9 AM–5 PM EST for real-time Slack & Zoom. A second offshore pod handles overnight production, so progress continues 24/7 without you staying up late."
   },
   {
