@@ -30,7 +30,6 @@ const Home = () => {
       <FeatureGridSection />
       <LandinBenefits />
       <LandinBenefitCards/>
-      {/* <ModernFeaturesSection /> */}
       <PortfolioSection />
       <OurServices />
       <LaunchSection />
@@ -39,7 +38,6 @@ const Home = () => {
         <FAQSection/>
       </div>
       <JoinUsNow />
-      {/* <Footer /> */}
       
       
       

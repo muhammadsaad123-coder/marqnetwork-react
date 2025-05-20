@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 .faq__section {
+  max-width:1200px;
+  margin:0 auto;
   display: flex;
   flex-wrap: wrap;
   background-color: #000;
   color: white;
-  padding: 4rem 2rem;
+  /* padding: 4rem 2rem; */
   gap: 3rem;
   font-family: 'Poppins', sans-serif;
 }
@@ -28,7 +30,7 @@
 
 .faq__intro h2 {
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
   margin-bottom: 10px;
 }

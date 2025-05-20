@@ -8,7 +8,15 @@
 }
 
 .benefit-card {
-  background: linear-gradient(90deg, #1715 0%, #000 100%);
+ 
+  /* background: radial-gradient(ellipse at bottom left, #56B848, #0d0d0d 30%, #000); */
+    background: radial-gradient(
+    circle at bottom left,
+    rgba(0, 255, 149, 0.2),
+    #0a0a0a 60%,
+    #000 100%
+  );
+  box-shadow: 0 0 30px rgba(0, 255, 150, 0.05);
   border-radius: 16px;
   padding: 20px;
   color: #fff;
@@ -20,7 +28,7 @@
   min-width: 300px;
   max-width: 400px;
   border: 1px solid rgba(0, 255, 136, 0.08);
-  box-shadow: 0 0 24px rgba(0, 255, 136, 0.04);
+  /* box-shadow: 0 0 24px rgba(0, 255, 136, 0.04); */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 

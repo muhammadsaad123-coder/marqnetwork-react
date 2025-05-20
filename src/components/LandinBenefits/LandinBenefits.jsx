@@ -1,5 +1,5 @@
-import React from 'react';
-import './LandinBenefits.css'; // Importing CSS for styling
+import React from "react";
+import "./LandinBenefits.css"; // Importing CSS for styling
 import { motion } from "framer-motion";
 
 const LandinBenefits = () => {
@@ -9,11 +9,13 @@ const LandinBenefits = () => {
       <div className="benefits__label">• Landin Benefits</div>
 
       {/* Main Heading */}
-      <motion.h1 className="benefits__heading"
+      <motion.h1
+        className="benefits__heading"
         initial={{ x: -20, opacity: 0.6, filter: "blur(4px)" }}
-  whileInView={{ x: 0, opacity: 1, filter: "blur(0px)" }}
-  transition={{ duration: 1.2, ease: "easeOut" }}
-  viewport={{ once: true, amount: 0.5 }}>
+        whileInView={{ x: 0, opacity: 1, filter: "blur(0px)" }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.5 }}
+      >
         <span>We Just Don’t Design,</span> <span>We Build.</span>
       </motion.h1>
 
@@ -25,24 +27,23 @@ const LandinBenefits = () => {
       {/* Feature Tags */}
       <div className="benefits__tags">
         {[
-          'Enhanced UX',
-  'Boosted Conversions',
-  'Fast Loading',
-  'SEO-Ready',
-  'Customizable',
-  'Scalable',
-  'Increased Engagement',
-  'Expandable',
-  'Secure',
-  'User-Friendly'
+          "Enhanced UX",
+          "Boosted Conversions",
+          "Fast Loading",
+          "SEO-Ready",
+          "Customizable",
+          "Scalable",
+          "Increased Engagement",
+          "Expandable",
+          "Secure",
+          "User-Friendly",
         ].map((tag, index) => (
-          <span key={index} className="benefit__tag">{tag}</span>
+          <span key={index} className="benefit__tag">
+            {tag}
+          </span>
         ))}
         <button className="benefits__cta">Contact Now</button>
       </div>
-
-      
-      
     </section>
   );
 };

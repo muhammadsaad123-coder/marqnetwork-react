@@ -6,7 +6,6 @@ const cards = [
   {
     city: "Excelus (Gov-IT)",
     company: "Cyber-Security Overhaul",
-    label: "NEW",
     description: "Hardened infra, passed Federal audit with zero findings and doubled site speed.",
     stats: ["100 % Compliance Pass", "70 % Faster Load"],
     image: "/images/basel.png"
@@ -21,7 +20,6 @@ const cards = [
   {
     city: "JeCouturier",
     company: "Custom E-Com for Tailoring",
-    label: "FRESH",
     description: "Launched bespoke suit store— full funnel, CRM, and automation.",
     stats: ["4 × Online Sales", "65 % Repeat Orders"],
     image: "/images/manila.png"
@@ -49,27 +47,24 @@ const cards = [
   }
 ];
 
-
 const InfiniteCardsSlider = () => {
-  const duplicated = [...cards, ...cards]; // For infinite loop effect
-
+  const duplicated = [...cards, ...cards];
   return (
     <div className="slider-wrapper">
       <div className="slider-track">
         {duplicated.map((card, index) => (
           <div className="slider-card" key={index}>
-            <img src={card.image} alt={card.city} />
-            <div className="card-content">
-              <h3>
-                {card.city}
-                {card.label && <span className="label">{card.label}</span>}
-              </h3>
-              <p className="company">{card.company}</p>
-              <p className="desc">{card.description}</p>
-              <div className="stats">
-                {card.stats.map((stat, i) => (
-                  <span key={i} className="stat-badge">{stat}</span>
-                ))}
+            <div className="card-image-wrapper">
+              <img src={card.image} alt={card.city} />
+              <div className="card-content-overlay">
+                <h3 className="brand-title">{card.city}</h3>
+                <p className="company">{card.company}</p>
+                <p className="desc">{card.description}</p>
+                <div className="stats">
+                  {card.stats.map((stat, i) => (
+                    <span key={i} className="stat-badge">{stat}</span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
