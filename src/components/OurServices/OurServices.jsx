@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 const services = [
   {
     title: "Digital Strategy Sprint",
+    
     desc: "Align vision, goals & tech in 2 weeks.",
     icon: "/images/sprint.png",
     price: " Strategy & Digital Transformation",
@@ -104,7 +105,7 @@ const OurServices = () => {
                 <div className="service-card__icon">
                   <img src={service.icon} alt="icon" />
                 </div>
-                <span className="service-card__badge">Development</span>
+                <span className="service-card__badge">{service.duration}</span>
               </div>
 
               <h3 className="service-card__title">{service.title}</h3>
